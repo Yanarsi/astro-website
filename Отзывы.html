@@ -11,31 +11,106 @@
       rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet" />
+    <link href="feedback.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="index.html">ASTRO</a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="header__button">ЗАПИСАТЬСЯ</button>
+    <header>
+      <a class="logo" href="index.html">ASTRO</a>
+      <div>
+        <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
+        <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
+        <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
+        <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
+      </div>
+      <button class="header-button">ЗАПИСАТЬСЯ</button>
+    </header>
+
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Записаться на услугу</h2>
+        <form>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <button type="submit">Записаться</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <div class="smile">
+        <h1>Отзывы &#9733;</h1>
+        <p>
+          Наша работа построена на большой ответственности за результат того,
+          что мы делаем, доказательством этому служат прекрасные улыбки наших
+          посетителей
+        </p>
+      </div>
+      <div class="image-gallery">
+        <div class="image-item">
+          <img src="feedback1.png" alt="Image 1" />
+        </div>
+        <div class="image-item">
+          <img src="feedback2.png" alt="Image 2" />
+        </div>
+        <div class="image-item">
+          <img src="feedback3.png" alt="Image 3" />
+        </div>
+        <div class="image-item">
+          <img src="feedback4.png" alt="Image 4" />
+        </div>
+        <div class="image-item">
+          <img src="feedback5.png" alt="Image 5" />
+        </div>
+        <div class="image-item">
+          <img src="feedback6.png" alt="Image 6" />
+        </div>
+        <div class="image-item">
+          <img src="feedback7.png" alt="Image 7" />
+        </div>
+        <div class="image-item">
+          <img src="feedback8.png" alt="Image 8" />
+        </div>
+        <div class="image-item">
+          <img src="feedback9.png" alt="Image 9" />
         </div>
       </div>
-    </header>
+
+      <div class="lightbox" style="display: none">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="Увеличенное изображение" class="lightbox-image" />
+      </div>
+    </main>
+    <div class="line"><hr /></div>
+    <footer class="footer">
+      <div class="logo2">
+        <h2>ASTRO</h2>
+      </div>
+      <div class="adress">
+        <h5>Адрес</h5>
+        <p class="text">
+          2 Войковский проезд 3/1<br />г.Москва<br />м.Войковская
+        </p>
+      </div>
+      <div class="information">
+        <h5>Контакты</h5>
+        <button
+          class="image-button2"
+          onclick="window.open('https:/t.me/Yanarsi', '_blank')"
+        ></button>
+        <button class="image-button"></button>
+        <p class="text">+7 (963) 910-36-00<br />astrobeauty@gmail.com</p>
+      </div>
+      <div class="time">
+        <h5>Часы работы</h5>
+        <p class="text">Пн-Вс: 10:00-22:00</p>
+        <p class="text">*без перерывов и выходных</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

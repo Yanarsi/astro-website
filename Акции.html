@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASTRO</title>
+    <title>ASTRO - Акции</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,31 +11,95 @@
       rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet" />
+    <link href="sales.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="index.html">ASTRO</a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="header__button">ЗАПИСАТЬСЯ</button>
+  <body class="sale-page">
+    <header>
+      <a class="logo" href="index.html">ASTRO</a>
+      <div>
+        <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
+        <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
+        <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
+        <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
+      </div>
+      <button class="header-button">ЗАПИСАТЬСЯ</button>
+    </header>
+
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Записаться на услугу</h2>
+        <form>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <button type="submit">Записаться</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <h1>Акции &#9733;</h1>
+
+      <div class="image-gallery">
+        <div class="image-item">
+          <img src="cake.png" alt="Скидка 500 рублей в честь дня рождения" />
+          <p>Скидка 500 рублей в честь дня рождения</p>
+        </div>
+        <div class="image-item">
+          <img src="girl.png" alt="Скидка 30% на первое посещение" />
+          <p>Скидка 30% на первое посещение</p>
+        </div>
+        <div class="image-item">
+          <img src="tarot.png" alt="Карта с предсказанием после преображения" />
+          <p>Карта с предсказанием после преображения</p>
+        </div>
+        <div class="image-item">
+          <img
+            src="friend.png"
+            alt="Приведи друга и получи 500 бонусных рублей"
+          />
+          <p>Приведи друга и получи 500 бонусных рублей</p>
+        </div>
+        <div class="image-item">
+          <img src="kevin.png" alt="ОСкидка на уход при окрашивании" />
+          <p>Скидка на уход при окрашивании</p>
         </div>
       </div>
-    </header>
+      <div class="salefirst">
+        <h1>Получите скидку 30%</h1>
+        <p>На первое посещение салона</p>
+      </div>
+      <div class="line"><hr /></div>
+    </main>
+    <footer class="footer">
+      <div class="logo2">
+        <h2>ASTRO</h2>
+      </div>
+      <div class="adress">
+        <h5>Адрес</h5>
+        <p class="text">
+          2 Войковский проезд 3/1<br />г.Москва<br />м.Войковская
+        </p>
+      </div>
+      <div class="information">
+        <h5>Контакты</h5>
+        <button
+          class="image-button2"
+          onclick="window.open('https:/t.me/Yanarsi', '_blank')"
+        ></button>
+        <button class="image-button"></button>
+        <p class="text">+7 (963) 910-36-00<br />astrobeauty@gmail.com</p>
+      </div>
+      <div class="time">
+        <h5>Часы работы</h5>
+        <p class="text">Пн-Вс: 10:00-22:00</p>
+        <p class="text">*без перерывов и выходных</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

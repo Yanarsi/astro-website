@@ -11,31 +11,95 @@
       rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="index.html">ASTRO</a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="header__button">ЗАПИСАТЬСЯ</button>
+    <header>
+      <a class="logo" href="index.html">ASTRO</a>
+      <div>
+        <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
+        <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
+        <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
+        <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
+      </div>
+      <button class="header-button">ЗАПИСАТЬСЯ</button>
+    </header>
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Записаться на услугу</h2>
+        <form>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <button type="submit">Записаться</button>
+        </form>
+      </div>
+    </div>
+
+    <h1>Контакты &#9733;</h1>
+    <section class="contact">
+      <div class="column-contact">
+        <div class="column">
+          <h2>Адрес</h2>
+          <p>
+            2 Войковский проезд 3/1<br />г.Москва<br />м.Войковская
+          </p>
+        </div>
+        <div class="column">
+          <h2>Связаться</h2>
+            <p class="phonenumber">+7 (963) 910-36-00
+            </p>
+            <p>Пн-Вс: 10:00-22:00
+            </p>
+        </div>
+        <div class="column">
+          <h2>Соц.сети</h2>
+          <button class="telegram"
+          onclick="window.open('https:/t.me/Yanarsi', '_blank')"
+        >
+          <button class="whatsapp"></button>
         </div>
       </div>
-    </header>
+    </section>
+    <div class="map-container">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=37.496484%2C55.853778&mode=search&oid=1197480695&ol=biz&sll=37.480005%2C55.853778&sspn=0.086174%2C0.029933&text=%D0%B8%D0%BC%D0%B8%D0%B4%D0%B6%20%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F&z=14"
+        class="map-iframe"
+      ></iframe>
+    </div>
+    <div class="line"><hr></div>
+
+    <footer class="footer">
+      <div class="logo2">
+        <h2>ASTRO</h2>
+      </div>
+      <div class="adress">
+        <h5>Адрес</h5>
+        <p class="text">
+          2 Войковский проезд 3/1<br />г.Москва<br />м.Войковская
+        </p>
+      </div>
+      <div class="information">
+        <h5>Контакты</h5>
+        <button
+          class="image-button2"
+          onclick="window.open('https:/t.me/Yanarsi', '_blank')"
+        >
+
+        </button>
+        <button class="image-button"></button>
+        <p class="text">+7 (963) 910-36-00<br />astrobeauty@gmail.com</p>
+      </div>
+      <div class="time">
+        <h5>Часы работы</h5>
+        <p class="text">Пн-Вс: 10:00-22:00</p>
+        <p class="text">*без перерывов и выходных</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

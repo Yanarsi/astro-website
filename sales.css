@@ -1,0 +1,60 @@
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 400;
+  margin-left: 120px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2%; /* Зазор между элементами */
+  justify-content: center; /* Центрирование по горизонтали */
+  padding: 3% 10% 5% 10%;
+}
+
+.image-item {
+  text-align: left;
+}
+
+.image-item img {
+  width: 80%;
+  display: block;
+  transition: transform 1s;
+}
+
+.image-item img:hover {
+  transform: scale(1.1);
+}
+
+.image-item p {
+  font-size: 1.2em;
+  color: white;
+  margin-top: 5%;
+  font-weight: 400;
+}
+.salefirst {
+  min-height: 400px;
+  max-width: 70%;
+  margin-top: 5%;
+  padding: 0.5%;
+  box-shadow: 0 0 60px #edbfff;
+  border-radius: 60% 30% 60% 30%;
+  margin-bottom: 5%;
+}
+.salefirst h1 {
+  margin-top: 10%;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: 10%;
+}
+.salefirst p {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 10%;
+}
