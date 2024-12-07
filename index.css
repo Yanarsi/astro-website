@@ -31,7 +31,7 @@ a {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #ab5aea; /* Более тёмный цвет для лучшего контраста на белом фоне */
+  color: #ab5aea;
 }
 a:hover {
   color: #8d43c5;
@@ -44,7 +44,7 @@ header {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 1000; /*Ensures header stays on top*/
+  z-index: 1000;
 }
 .navbar {
   display: flex;
@@ -53,7 +53,7 @@ header {
   width: 100%;
   margin: 0 auto;
   max-width: 1300px;
-  height: 50px; /* Сохраняем высоту, если нужно */
+  height: 50px;
 }
 
 .navbar .logo a {
@@ -76,16 +76,15 @@ header {
 }
 
 .navbar .toggle_btn {
-  color: #ffffff; /* Более тёмный цвет для лучшего контраста */
+  color: #ffffff;
   font-size: 1.3rem;
   background-color: #ab5aea;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  /* Removed display: none; */
-  width: auto; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
-  padding: 8px 16px; /* Add some padding */
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
   display: none;
 }
 
@@ -157,9 +156,9 @@ header {
 }
 
 .bgtext p {
-  padding: 100px 0px; /* Reduced padding for smaller screens */
+  padding: 100px 0px;
   width: 100%;
-  font-size: 4em; /* Use em units for relative sizing */
+  font-size: 4em;
   color: white;
   text-align: center;
   font-weight: 600;
@@ -172,16 +171,15 @@ header {
   top: 150px;
   right: -200px;
   position: absolute;
-  filter: blur(4px); /* brightness doesn't take a pixel value */
-  filter: brightness(4px); /* Adjust brightness value as needed */
+  filter: blur(4px);
+  filter: brightness(4px);
 }
-
-/* Media query for smaller screens (e.g., phones) */
+/*МЕДИАЗАПРОС ДЛЯ ГЛАВНОГО ЗАГОЛОВКА*/
 @media (max-width: 768px) {
   .bgtext p {
     font-weight: 700;
-    font-size: 1.8em; /* Smaller font size for smaller screens */
-    padding: 50px 0; /* Even less padding on phones */
+    font-size: 1.8em;
+    padding: 50px 0;
     line-height: 3rem;
   }
   .bgtext p svg {
@@ -232,8 +230,8 @@ header {
   background-color: #f7ecff;
   margin: 15% auto;
   padding: 20px;
-  border-radius: 5px; /* Добавлено скругление углов */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавлена тень */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 300px;
 }
 
@@ -253,28 +251,28 @@ header {
 
 .modal form {
   display: flex;
-  flex-direction: column; /* Элементы располагаются вертикально */
-  gap: 15px; /* Отступ между элементами формы */
+  flex-direction: column;
+  gap: 15px;
 }
 
 .modal label {
-  margin-bottom: 5px; /* Отступ снизу от label */
+  margin-bottom: 5px;
 }
 
 .modal input[type="text"],
 .modal input[type="tel"] {
   padding: 10px;
   border: 1px solid #d8b4f3;
-  border-radius: 5px; /* Скругление углов input */
-  box-sizing: border-box; /* Чтобы padding учитывался в ширине */
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .modal button[type="submit"] {
   padding: 10px 20px;
-  background-color: #ab5aea; /* Цвет кнопки */
+  background-color: #ab5aea;
   color: white;
   border: none;
-  border-radius: 5px; /* Скругление углов кнопки */
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -282,16 +280,16 @@ header {
   background-color: #cd8bff;
 }
 .line2 {
-  width: 100%; /* Занимает всю ширину родительского контейнера */
-  text-align: center; /* Центрирование изображения по горизонтали */
-  margin: 20px 0; /* Поля сверху и снизу */
-  overflow: hidden; /* Скрывает переполнение, если изображение слишком большое */
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .line2 img {
-  max-width: 100%; /* Изображение не будет больше, чем его контейнер */
-  height: auto; /* Сохраняет пропорции изображения */
-  display: block; /* Убирает лишнее пространство под изображением */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*АКЦИИ*/
@@ -375,25 +373,25 @@ header {
 .service {
   display: flex;
   align-items: center;
-  width: 80%; /* Adjust width as needed */
-  margin: 20px auto; /* Center horizontally */
-  padding: 20px; /* Added padding around the service */
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .service__image,
 .service__text {
-  flex: 1; /* Occupy equal space */
+  flex: 1;
 }
 
 .service__image {
-  margin-right: 20px; /* add space between image and text */
+  margin-right: 20px;
 }
 .service__text {
-  margin-left: 20px; /* add space between image and text */
+  margin-left: 20px;
 }
 
 .service img {
-  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  max-width: 100%;
   height: auto;
 }
 
@@ -433,15 +431,15 @@ header {
 /*МЕДИАЗАПРОС ДЛЯ УСЛУГ*/
 @media (max-width: 768px) {
   .service {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
     align-items: center;
-    width: 90%; /* Adjust width as needed */
+    width: 90%;
   }
 
   .service__image,
   .service__text {
-    flex: 1; /* Occupy equal space */
-    margin: 30px 0; /* Add some spacing */
+    flex: 1;
+    margin: 30px 0;
     margin-left: 20px;
   }
   .service__text h3 {
@@ -457,27 +455,27 @@ header {
 .safe {
   max-height: 300px;
   width: 80%;
-  margin: 50px auto; /* Center the container */
+  margin: 50px auto;
   display: flex;
-  justify-content: center; /* Center content within the container */
-  align-items: center; /* Vertically center content */
+  justify-content: center;
+  align-items: center;
 }
 
 .safe h1 {
   outline: none;
   box-shadow: 0 0 30px #edbfff;
-  border-radius: 15px; /* Slightly less rounded corners */
+  border-radius: 15px;
   color: white;
-  font-size: 3em; /* More responsive font size */
-  font-weight: 300; /* Use a lighter font weight for better readability */
-  text-align: center; /* Center text within the h1 */
-  padding: 20px; /* Reduced padding */
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Media query for smaller screens */
+/*МЕДИАЗАПРОС ДЛЯ ПРИНЦИПОВ*/
 @media (max-width: 768px) {
   .safe h1 {
-    font-size: 2em; /* Reduce font size on smaller screens */
+    font-size: 2em;
   }
 }
 
@@ -485,25 +483,25 @@ header {
   margin-bottom: 5%;
   margin-top: 5%;
   display: flex;
-  justify-content: center; /* Выравнивание по горизонтали */
-  align-items: center; /* Выравнивание по вертикали */
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-container {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Создаёт две колонки равной ширины */
-  grid-template-rows: repeat(2, 1fr); /* Создаёт две строки равной высоты */
-  grid-gap: 30px; /* Зазор между элементами сетки */
-  max-width: 90%; /* Максимальная ширина для адаптивности */
-  width: 100%; /* Занимает всю доступную ширину */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  max-width: 90%;
+  width: 100%;
 }
 
 .grid-item {
   display: flex;
-  flex-direction: column; /* Элементы внутри ячейки располагаются вертикально */
-  align-items: center; /* Выравнивание по горизонтали внутри ячейки */
-  margin: 10px; /* Отступы вокруг элементов */
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 .grid-item img {
@@ -531,10 +529,10 @@ header {
   }
 }
 .line {
-  border: none; /* Убираем стандартную границу */
-  height: 3px; /* Толщина линии */
+  border: none;
+  height: 3px;
   background-color: #edbfff;
-  box-shadow: 0 0 5px #ffffff, 0 0 5px #edbfff; /* Неоновый эффект */
+  box-shadow: 0 0 5px #ffffff, 0 0 5px #edbfff;
 }
 footer {
   display: flex;
@@ -552,8 +550,7 @@ footer {
 
 .image-button,
 .image-button2 {
-  /* Combined selectors for similar styles */
-  margin-bottom: 10px; /* Add margin for vertical spacing */
+  margin-bottom: 10px;
   width: 50px;
   height: 50px;
   border: none;
@@ -590,20 +587,19 @@ h5 {
 
 /* МЕДИАЗАПРОС ДЛЯ ФУТЕРА */
 @media (max-width: 768px) {
-  /* Adjust 768px as needed */
   footer {
-    display: block; /* Change to block for vertical stacking */
+    display: block;
     text-align: center;
-    margin-left: 15px; /* Adjust margins for smaller screens */
+    margin-left: 15px;
     margin-right: 15px;
   }
   .logo2 {
-    margin-bottom: 20px; /* Add margin below the logo */
+    margin-bottom: 20px;
   }
   .image-button,
   .image-button2 {
-    margin: 10px auto; /* Center buttons horizontally */
-    display: inline-block; /* Ensure buttons remain inline */
+    margin: 10px auto;
+    display: inline-block;
   }
 
   h5 {
