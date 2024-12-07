@@ -14,14 +14,25 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html">ASTRO</a>
-      <div>
-        <a class="menu__list-link" href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
-        <a class="menu__list-link" href="Акции.html">АКЦИИ</a>
-        <a class="menu__list-link" href="Отзывы.html">ОТЗЫВЫ</a>
-        <a class="menu__list-link" href="Контакты.html">КОНТАКТЫ</a>
+      <div class="navbar">
+        <div class="logo"><a href="index.html">ASTRO</a></div>
+        <div class="links">
+          <a href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
+          <a href="Акции.html">АКЦИИ</a>
+          <a href="Отзывы.html">ОТЗЫВЫ</a>
+          <a href="Контакты.html">КОНТАКТЫ</a>
+        </div>
+        <button class="header-button">ЗАПИСАТЬСЯ</button>
+        <button class="toggle_btn">МЕНЮ</button>
       </div>
-      <button class="header-button">ЗАПИСАТЬСЯ</button>
+
+      <div class="dropdown_menu">
+        <button class="header-button">ЗАПИСАТЬСЯ</button>
+        <a href="Услуги.html">УСЛУГИ И ЦЕНЫ</a>
+        <a href="Акции.html">АКЦИИ</a>
+        <a href="Отзывы.html">ОТЗЫВЫ</a>
+        <a href="Контакты.html">КОНТАКТЫ</a>
+      </div>
     </header>
 
     <div id="booking-modal" class="modal">
@@ -243,6 +254,15 @@
         <p class="text">*без перерывов и выходных</p>
       </div>
     </footer>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("open");
+      });
+    </script>
+
     <script src="main.js"></script>
   </body>
 </html>

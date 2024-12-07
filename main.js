@@ -27,6 +27,7 @@ const bookingModal = document.getElementById("booking-modal");
 const closeBookingModal = document.querySelector(".close-modal");
 
 setupModal(registerButtons, bookingModal, closeBookingModal);
+
 const imageItems = document.querySelectorAll(".image-item");
 const lightbox = document.querySelector(".lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");

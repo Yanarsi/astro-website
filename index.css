@@ -19,76 +19,150 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
+body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ab5aea;
+  margin: 0;
+}
 a {
   text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ab5aea; /* Более тёмный цвет для лучшего контраста на белом фоне */
+}
+a:hover {
+  color: #8d43c5;
+  font-weight: 600;
+  transform: scale(1.05);
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  background-color: #e7c8ff;
-  padding: 15px 0px;
-  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; /*Ensures header stays on top*/
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 50px; /* Сохраняем высоту, если нужно */
+}
 
-  .logo {
-    color: #8948bb;
-    font-size: 40px;
-    font-weight: 600;
+.navbar .logo a {
+  color: #ab5aea;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.navbar .logo:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transform: scale(1.05);
+  font-weight: 650;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2.9rem;
+}
+
+.navbar .toggle_btn {
+  color: #ffffff; /* Более тёмный цвет для лучшего контраста */
+  font-size: 1.3rem;
+  background-color: #ab5aea;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  /* Removed display: none; */
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  padding: 8px 16px; /* Add some padding */
+  display: none;
+}
+.dropdown_menu {
+  display: none; /* Initially hide the dropdown */
+}
+
+.header-button {
+  padding: 10px 20px;
+  background-color: #ab5aea;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.header-button:hover {
+  transform: scale(1.05);
+  box-shadow: -4px 8px 38px 24px rgba(128, 31, 222, 0.2);
+  cursor: pointer;
+}
+/*ВЫПАДАЮЩЕЕ МЕНЮ*/
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgb(254, 241, 255);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu a {
+  padding: 0.7rem;
+  display: block; /*Добавил это, чтобы исправить проблему выравнивания*/
+  text-align: center;
+}
+.dropdown_menu .header-button {
+  width: 100%;
+  display: block; /*Добавил это, чтобы исправить проблему выравнивания*/
+  text-align: center;
+}
+
+/*АДАПТИВНАЯ ВЕРСТКА */
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .header-button {
+    display: none;
   }
-
-  .logo:hover {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    transform: scale(1.05);
-    font-weight: 650;
+  .navbar .toggle_btn {
+    display: block;
   }
-
-  div {
-    display: flex;
-    gap: 60px;
-
-    a {
-      font-size: 20px;
-      font-weight: 500;
-      color: #8948bb;
-    }
-
-    a:hover {
-      color: #8d43c5;
-      font-weight: 550;
-      transform: scale(1.02);
-    }
-  }
-
-  .header-button {
-    padding: 10px 20px;
-    background-color: #ab5aea;
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-  }
-
-  .header-button:hover {
-    transform: scale(1.05);
-    box-shadow: -4px 8px 38px 24px rgba(128, 31, 222, 0.2);
-    cursor: pointer;
+  .dropdown_menu {
+    display: block;
+    right: 2rem; /*Исправленная позиция для меньших разрешений*/
   }
 }
 
+@media (max-width: 992px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
 .bgtext {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
   p {
     padding: 200px 0px;
     width: 100%;
@@ -106,15 +180,6 @@ header {
       filter: brightness(4px);
     }
   }
-}
-
-body {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  font-family: "Montserrat", sans-serif;
-  background-color: #ab5aea;
-  margin: 0;
 }
 
 .register-button {
