@@ -148,30 +148,44 @@ header {
     width: unset;
   }
 }
-
 .bgtext {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
 
-  p {
-    padding: 200px 0px;
-    width: 100%;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    position: relative;
-    svg {
-      height: 55%;
-      top: 150px;
-      right: -200px;
-      position: absolute;
-      filter: blur(4px);
-      filter: brightness(4px);
-    }
+.bgtext p {
+  padding: 100px 0px; /* Reduced padding for smaller screens */
+  width: 100%;
+  font-size: 4em; /* Use em units for relative sizing */
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+}
+
+.bgtext p svg {
+  height: 55%;
+  top: 150px;
+  right: -200px;
+  position: absolute;
+  filter: blur(4px); /* brightness doesn't take a pixel value */
+  filter: brightness(4px); /* Adjust brightness value as needed */
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  .bgtext p {
+    font-weight: 700;
+    font-size: 1.8em; /* Smaller font size for smaller screens */
+    padding: 50px 0; /* Even less padding on phones */
+    line-height: 3rem;
+  }
+  .bgtext p svg {
+    display: none;
   }
 }
 
@@ -183,8 +197,8 @@ header {
   color: white;
   border: 2px solid white;
   border-radius: 2em;
-  margin-top: 20px;
-  margin-left: 42%;
+  margin: 30px auto;
+  display: block;
   box-shadow: 0 0 5px white;
   transition: transform 0.5s ease;
 }
@@ -195,6 +209,12 @@ header {
   background-color: #e7c8ff;
 }
 
+@media (max-width: 768px) {
+  .register-button {
+    font-size: 1em;
+    margin-bottom: 50px;
+  }
+}
 /*ФОРМА ДЛЯ ЗАПИСИ*/
 .modal {
   display: none;
@@ -274,8 +294,6 @@ header {
   display: block; /* Убирает лишнее пространство под изображением */
 }
 
-/* Адаптация под меньшие экраны (настроить точку разрыва по необходимости) */
-
 /*АКЦИИ*/
 .sales h2 {
   color: rgb(255, 255, 255);
@@ -326,6 +344,10 @@ header {
     height: 70%;
     display: block;
     margin-bottom: 40px;
+  }
+  .sales h2 {
+    font-size: 3em;
+    margin-left: 10%;
   }
 }
 
@@ -387,6 +409,7 @@ header {
   line-height: 1.5;
   font-size: 25px;
   font-weight: 300;
+  margin-bottom: 60px;
 }
 
 .body_button {
@@ -423,6 +446,10 @@ header {
   }
   .service__text h3 {
     margin-top: 10px;
+  }
+  .services h2 {
+    font-size: 3em;
+    margin-left: 10%;
   }
 }
 
