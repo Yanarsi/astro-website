@@ -279,6 +279,7 @@ header {
 .modal button[type="submit"]:hover {
   background-color: #cd8bff;
 }
+
 @media (max-width: 768px) {
   .modal-content {
     background-color: #f7ecff;
@@ -289,6 +290,7 @@ header {
     width: 300px;
   }
 }
+
 .line2 {
   width: 100%;
   text-align: center;
@@ -297,7 +299,7 @@ header {
 }
 
 .line2 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
