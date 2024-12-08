@@ -94,3 +94,27 @@ h1 {
     margin-left: 5%;
   }
 }
+@media (min-width: 2500px) {
+  h1 {
+    font-size: 90px;
+  }
+  .map-iframe {
+    height: 600px;
+  }
+  .column h2 {
+    font-size: 50px;
+  }
+
+  .column p {
+    font-size: 40px;
+    line-height: 2em;
+  }
+  .column .phonenumber {
+    font-size: 50px;
+  }
+  .whatsapp,
+  .telegram {
+    width: 100px;
+    height: 100px;
+  }
+}

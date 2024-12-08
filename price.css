@@ -7,6 +7,16 @@ h1 {
   margin-bottom: 5%;
   text-transform: uppercase;
 }
+@media (min-width: 2500px) {
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
 .price {
   display: flex;
   max-width: 70%;

@@ -79,3 +79,12 @@ h1 {
     display: block;
   }
 }
+@media (min-width: 2500px) {
+  h1 {
+    font-size: 90px;
+  }
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  }
+}

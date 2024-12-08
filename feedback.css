@@ -79,3 +79,11 @@ h1 {
     justify-content: center;
   }
 }
+@media (min-width: 2500px) {
+  h1 {
+    font-size: 90px;
+  }
+  .smile p {
+    font-size: 50px;
+  }
+}
