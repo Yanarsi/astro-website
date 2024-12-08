@@ -58,3 +58,24 @@ h1 {
   font-weight: 400;
   margin-left: 10%;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+  .salefirst {
+    min-height: 100px;
+    display: block;
+    margin-top: 5em;
+    box-shadow: none;
+  }
+  .salefirst h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10%;
+  }
+  .image-gallery {
+    display: block;
+  }
+}

@@ -85,3 +85,12 @@ h1 {
   width: 80%;
   height: 300px;
 }
+@media (max-width: 768px) {
+  .column-contact {
+    display: block;
+  }
+  h1 {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+}
