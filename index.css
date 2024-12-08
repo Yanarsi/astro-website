@@ -686,3 +686,14 @@ h5 {
     margin-bottom: 10px;
   }
 }
+@media (min-width: 2500px) {
+  .image-button,
+  .image-button2 {
+    width: 100px;
+    height: 100px;
+  }
+  .text {
+    line-height: 2em;
+    font-size: 30px;
+  }
+}
