@@ -131,22 +131,6 @@ header {
   text-align: center;
 }
 
-/*АДАПТИВНАЯ ВЕРСТКА */
-@media (max-width: 992px) {
-  .navbar .links,
-  .navbar .header-button {
-    display: none;
-  }
-  .navbar .toggle_btn {
-    display: block;
-  }
-  .dropdown_menu {
-    display: block;
-    right: 2rem;
-    left: 2rem;
-    width: unset;
-  }
-}
 .bgtext {
   width: 100%;
   display: flex;
@@ -174,18 +158,6 @@ header {
   filter: blur(4px);
   filter: brightness(4px);
 }
-/*МЕДИАЗАПРОС ДЛЯ ГЛАВНОГО ЗАГОЛОВКА*/
-@media (max-width: 768px) {
-  .bgtext p {
-    font-weight: 700;
-    font-size: 1.8em;
-    padding: 50px 0;
-    line-height: 3rem;
-  }
-  .bgtext p svg {
-    display: none;
-  }
-}
 
 .register-button {
   padding: 0.5em 1.5em;
@@ -205,29 +177,6 @@ header {
   transform: scale(1.1);
   color: #ab5aea;
   background-color: #e7c8ff;
-}
-
-@media (max-width: 768px) {
-  .register-button {
-    font-size: 1em;
-    margin-bottom: 50px;
-  }
-}
-@media (min-width: 2600px) {
-  .register-button {
-    padding: 0.5em 2em;
-    font-size: 3em;
-    margin-bottom: 50px;
-  }
-  .bgtext p {
-    font-weight: 700;
-    font-size: 6em;
-    padding: 50px 0;
-    line-height: 7rem;
-  }
-  .bgtext p svg {
-    display: none;
-  }
 }
 
 /*ФОРМА ДЛЯ ЗАПИСИ*/
@@ -663,6 +612,59 @@ h5 {
   letter-spacing: 0.04em;
   text-align: left;
   color: #ffffff;
+}
+
+/*АДАПТИВНАЯ ВЕРСТКА */
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .header-button {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+    right: 2rem;
+    left: 2rem;
+    width: unset;
+  }
+}
+/*АДАПТИВ ДЛЯ ГЛАВНОЙ КНОПКИ И ВЕДУЩЕГО ТЕКСТА*/
+@media (max-width: 768px) {
+  .register-button {
+    font-size: 1em;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 2600px) {
+  .register-button {
+    padding: 0.5em 2em;
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+  .bgtext p {
+    font-weight: 700;
+    font-size: 6em;
+    padding: 50px 0;
+    line-height: 7rem;
+  }
+  .bgtext p svg {
+    display: none;
+  }
+}
+
+/*МЕДИАЗАПРОС ДЛЯ ГЛАВНОГО ЗАГОЛОВКА*/
+@media (max-width: 768px) {
+  .bgtext p {
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 50px 0;
+    line-height: 3rem;
+  }
+  .bgtext p svg {
+    display: none;
+  }
 }
 
 /* МЕДИАЗАПРОС ДЛЯ ФУТЕРА */
